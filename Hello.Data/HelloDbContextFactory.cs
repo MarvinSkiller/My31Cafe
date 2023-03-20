@@ -11,7 +11,7 @@ namespace Hello.Data
 		public HelloDbContext CreateDbContext(string[] args)
 		{
 			var optionsBuilder = new DbContextOptionsBuilder<HelloDbContext>();
-			optionsBuilder.UseSqlServer(@"Data Source=SKYM\SQLEXPRESS;Initial Catalog=OrderSystemDB;Integrated Security=True;");
+			optionsBuilder.UseSqlServer(@"Data Source=SKYM\SQLEXPRESS;Initial Catalog=My31Cafe;Integrated Security=True;");
 
 			return new HelloDbContext(optionsBuilder.Options);
 		}
