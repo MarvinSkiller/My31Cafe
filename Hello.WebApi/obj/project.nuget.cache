@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QGUF+imJ2g3XxaUI8ThDfzVipeD9O972ilKi0yWuuJqlZNEuxS93mG8SJ7QclChIpOyiZPtgFqr20A86du7zkw==",
+  "dgSpecHash": "1Zze1QdnDT+nU3orlhh6Q1yaqtjB3e6LgpY1dxh4qK5Vqb5NCEQegNTkY9vhnbeGgLKDxynvA/V2/5/1EgX5Rw==",
   "success": true,
-  "projectFilePath": "D:\\MyDev\\My31Cafe\\Hello.WebApi\\Hello.WebApi.csproj",
+  "projectFilePath": "D:\\MyDev\\My31Cafe\\Hello.WebApi\\My31Cafe.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marvin\\.nuget\\packages\\microsoft.aspnet.cors\\5.2.7\\microsoft.aspnet.cors.5.2.7.nupkg.sha512",
     "C:\\Users\\Marvin\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",

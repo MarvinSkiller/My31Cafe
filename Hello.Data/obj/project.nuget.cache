@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LndfxnUclEYMb5U3QxghFVEQgYKsFLcIcUiMctJ3qmE7jQG5kfjKyaDt+V1wpNS9sjT2mihLYgrExkNSqKmOzA==",
+  "dgSpecHash": "76f5//j30VQ9lS68OwTcTnJVRH26L2RuBIbMW5PjLOBvo7eWfCf3uWupXXdyF2YMldIayHtMqKtG2hlLuZgPDA==",
   "success": true,
-  "projectFilePath": "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj",
+  "projectFilePath": "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marvin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Marvin\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

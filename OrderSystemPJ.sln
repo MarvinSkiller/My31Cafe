@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Data", "Hello.Data\Hello.Data.csproj", "{DD5C30FF-C699-4BFE-AD08-1482ADB3A899}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My31Cafe.Data", "Hello.Data\My31Cafe.Data.csproj", "{DD5C30FF-C699-4BFE-AD08-1482ADB3A899}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello.Application", "Hello.Application\Hello.Application.csproj", "{0143ADFF-EB19-4132-A624-9BFDF2C5AC31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My31Cafe.Application", "Hello.Application\My31Cafe.Application.csproj", "{0143ADFF-EB19-4132-A624-9BFDF2C5AC31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello.WebApi", "Hello.WebApi\Hello.WebApi.csproj", "{6415C211-C129-4CDD-9AFA-E566C9A8E363}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My31Cafe.WebApi", "Hello.WebApi\My31Cafe.WebApi.csproj", "{6415C211-C129-4CDD-9AFA-E566C9A8E363}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello.WebApp", "Hello.WebApp\Hello.WebApp.csproj", "{3AC87E09-E91A-4285-9B91-64ED3D895916}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My31Cafe.WebApp", "Hello.WebApp\My31Cafe.WebApp.csproj", "{3AC87E09-E91A-4285-9B91-64ED3D895916}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

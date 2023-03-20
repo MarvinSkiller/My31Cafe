@@ -1490,17 +1490,17 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Hello.Data/1.0.0": {
+      "My31Cafe.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.9"
         },
         "compile": {
-          "bin/placeholder/Hello.Data.dll": {}
+          "bin/placeholder/My31Cafe.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Hello.Data.dll": {}
+          "bin/placeholder/My31Cafe.Data.dll": {}
         }
       }
     }
@@ -5729,16 +5729,16 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Hello.Data/1.0.0": {
+    "My31Cafe.Data/1.0.0": {
       "type": "project",
-      "path": "../Hello.Data/Hello.Data.csproj",
-      "msbuildProject": "../Hello.Data/Hello.Data.csproj"
+      "path": "../Hello.Data/My31Cafe.Data.csproj",
+      "msbuildProject": "../Hello.Data/My31Cafe.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Hello.Data >= 1.0.0",
-      "Microsoft.AspNetCore.Http.Features >= 5.0.0"
+      "Microsoft.AspNetCore.Http.Features >= 5.0.0",
+      "My31Cafe.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5747,9 +5747,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyDev\\My31Cafe\\Hello.Application\\Hello.Application.csproj",
-      "projectName": "Hello.Application",
-      "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Application\\Hello.Application.csproj",
+      "projectUniqueName": "D:\\MyDev\\My31Cafe\\Hello.Application\\My31Cafe.Application.csproj",
+      "projectName": "My31Cafe.Application",
+      "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Application\\My31Cafe.Application.csproj",
       "packagesPath": "C:\\Users\\Marvin\\.nuget\\packages\\",
       "outputPath": "D:\\MyDev\\My31Cafe\\Hello.Application\\obj\\",
       "projectStyle": "PackageReference",
@@ -5768,8 +5768,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj": {
-              "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj"
+            "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj": {
+              "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj"
             }
           }
         }

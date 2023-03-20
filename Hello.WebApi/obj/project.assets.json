@@ -2141,31 +2141,31 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Hello.Application/1.0.0": {
+      "My31Cafe.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Hello.Data": "1.0.0",
-          "Microsoft.AspNetCore.Http.Features": "5.0.0"
+          "Microsoft.AspNetCore.Http.Features": "5.0.0",
+          "My31Cafe.Data": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Hello.Application.dll": {}
+          "bin/placeholder/My31Cafe.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Hello.Application.dll": {}
+          "bin/placeholder/My31Cafe.Application.dll": {}
         }
       },
-      "Hello.Data/1.0.0": {
+      "My31Cafe.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.9"
         },
         "compile": {
-          "bin/placeholder/Hello.Data.dll": {}
+          "bin/placeholder/My31Cafe.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Hello.Data.dll": {}
+          "bin/placeholder/My31Cafe.Data.dll": {}
         }
       }
     }
@@ -7378,22 +7378,22 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Hello.Application/1.0.0": {
+    "My31Cafe.Application/1.0.0": {
       "type": "project",
-      "path": "../Hello.Application/Hello.Application.csproj",
-      "msbuildProject": "../Hello.Application/Hello.Application.csproj"
+      "path": "../Hello.Application/My31Cafe.Application.csproj",
+      "msbuildProject": "../Hello.Application/My31Cafe.Application.csproj"
     },
-    "Hello.Data/1.0.0": {
+    "My31Cafe.Data/1.0.0": {
       "type": "project",
-      "path": "../Hello.Data/Hello.Data.csproj",
-      "msbuildProject": "../Hello.Data/Hello.Data.csproj"
+      "path": "../Hello.Data/My31Cafe.Data.csproj",
+      "msbuildProject": "../Hello.Data/My31Cafe.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Hello.Application >= 1.0.0",
-      "Hello.Data >= 1.0.0",
-      "Microsoft.AspNet.WebApi.Cors >= 5.2.7"
+      "Microsoft.AspNet.WebApi.Cors >= 5.2.7",
+      "My31Cafe.Application >= 1.0.0",
+      "My31Cafe.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7402,9 +7402,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyDev\\My31Cafe\\Hello.WebApi\\Hello.WebApi.csproj",
-      "projectName": "Hello.WebApi",
-      "projectPath": "D:\\MyDev\\My31Cafe\\Hello.WebApi\\Hello.WebApi.csproj",
+      "projectUniqueName": "D:\\MyDev\\My31Cafe\\Hello.WebApi\\My31Cafe.WebApi.csproj",
+      "projectName": "My31Cafe.WebApi",
+      "projectPath": "D:\\MyDev\\My31Cafe\\Hello.WebApi\\My31Cafe.WebApi.csproj",
       "packagesPath": "C:\\Users\\Marvin\\.nuget\\packages\\",
       "outputPath": "D:\\MyDev\\My31Cafe\\Hello.WebApi\\obj\\",
       "projectStyle": "PackageReference",
@@ -7423,11 +7423,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\MyDev\\My31Cafe\\Hello.Application\\Hello.Application.csproj": {
-              "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Application\\Hello.Application.csproj"
+            "D:\\MyDev\\My31Cafe\\Hello.Application\\My31Cafe.Application.csproj": {
+              "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Application\\My31Cafe.Application.csproj"
             },
-            "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj": {
-              "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj"
+            "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj": {
+              "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj"
             }
           }
         }

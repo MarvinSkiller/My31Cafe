@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj": {
-                "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj"
+              "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj": {
+                "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj"
               }
             }
           }
@@ -68,12 +68,12 @@
         }
       }
     },
-    "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj": {
+    "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj",
-        "projectName": "Hello.Data",
-        "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Data\\Hello.Data.csproj",
+        "projectUniqueName": "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj",
+        "projectName": "My31Cafe.Data",
+        "projectPath": "D:\\MyDev\\My31Cafe\\Hello.Data\\My31Cafe.Data.csproj",
         "packagesPath": "C:\\Users\\Marvin\\.nuget\\packages\\",
         "outputPath": "D:\\MyDev\\My31Cafe\\Hello.Data\\obj\\",
         "projectStyle": "PackageReference",

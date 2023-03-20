@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Hello.Application\Hello.Application.csproj" />
-    <ProjectReference Include="..\Hello.Data\Hello.Data.csproj" />
+    <ProjectReference Include="..\Hello.Application\My31Cafe.Application.csproj" />
+    <ProjectReference Include="..\Hello.Data\My31Cafe.Data.csproj" />
   </ItemGroup>
 
 </Project>

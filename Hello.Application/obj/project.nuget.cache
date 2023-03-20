@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J/xT7Q5SjVui5xufxTI8M5bcUt7mVv+U5gCc3cB+5fc863X26DdbuX4omYVIwe7tsSh748kjzRiPZIf2YrF37g==",
+  "dgSpecHash": "oTKyz3q2G43fiHrQwKeH888m+JjsErpiALHzgZsV8Imdnw1D0zBvcz2lkjcyXkB9HOOpVgs5t3uZ0htAeFGadw==",
   "success": true,
-  "projectFilePath": "D:\\MyDev\\My31Cafe\\Hello.Application\\Hello.Application.csproj",
+  "projectFilePath": "D:\\MyDev\\My31Cafe\\Hello.Application\\My31Cafe.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marvin\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.0\\microsoft.aspnetcore.http.features.5.0.0.nupkg.sha512",
     "C:\\Users\\Marvin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

@@ -1,0 +1,13 @@
+D:\MyDev\My31Cafe\Hello.Data\bin\Debug\netcoreapp3.1\My31Cafe.Data.deps.json
+D:\MyDev\My31Cafe\Hello.Data\bin\Debug\netcoreapp3.1\My31Cafe.Data.runtimeconfig.json
+D:\MyDev\My31Cafe\Hello.Data\bin\Debug\netcoreapp3.1\My31Cafe.Data.runtimeconfig.dev.json
+D:\MyDev\My31Cafe\Hello.Data\bin\Debug\netcoreapp3.1\My31Cafe.Data.dll
+D:\MyDev\My31Cafe\Hello.Data\bin\Debug\netcoreapp3.1\My31Cafe.Data.pdb
+D:\MyDev\My31Cafe\Hello.Data\obj\Debug\netcoreapp3.1\My31Cafe.Data.csproj.AssemblyReference.cache
+D:\MyDev\My31Cafe\Hello.Data\obj\Debug\netcoreapp3.1\My31Cafe.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyDev\My31Cafe\Hello.Data\obj\Debug\netcoreapp3.1\My31Cafe.Data.AssemblyInfoInputs.cache
+D:\MyDev\My31Cafe\Hello.Data\obj\Debug\netcoreapp3.1\My31Cafe.Data.AssemblyInfo.cs
+D:\MyDev\My31Cafe\Hello.Data\obj\Debug\netcoreapp3.1\My31Cafe.Data.csproj.CoreCompileInputs.cache
+D:\MyDev\My31Cafe\Hello.Data\obj\Debug\netcoreapp3.1\My31Cafe.Data.dll
+D:\MyDev\My31Cafe\Hello.Data\obj\Debug\netcoreapp3.1\My31Cafe.Data.pdb
+D:\MyDev\My31Cafe\Hello.Data\obj\Debug\netcoreapp3.1\My31Cafe.Data.genruntimeconfig.cache
