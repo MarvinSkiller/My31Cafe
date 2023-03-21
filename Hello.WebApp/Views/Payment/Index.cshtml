@@ -33,20 +33,20 @@
                                     
                                 </div>
                                 <p class="float-left mb-0 mt-3">Discount</p>
-                                <p class="float-right mb-0 mt-3">@Html.DisplayFor(model => model.discount)đ</p>
+                                <p class="float-right mb-0 mt-3">@Html.DisplayFor(model => model.discount)</p>
                                 <div style="clear: both;"></div>
                                 <p class="float-left mb-0">Fee</p>
                                 <p class="float-right mb-0">0</p>
                                 <div style="clear: both;"></div>
                                 <p class="float-left mb-0 font-weight-bold" style="font-size: 130%">Total</p>
-                                <p class="float-right mb-0 font-weight-bold" style="font-size: 130%">@Html.DisplayFor(model => model.total)đ</p>
+                                <p class="float-right mb-0 font-weight-bold" style="font-size: 130%">@Html.DisplayFor(model => model.total)</p>
                                 <div style="clear: both;"></div>
 
                                 <p class="float-left mb-0 mt-3">Pay</p>
-                                <p class="float-right mb-0 mt-3">@Html.DisplayFor(model => model.receive)đ</p>
+                                <p class="float-right mb-0 mt-3">@Html.DisplayFor(model => model.receive)</p>
                                 <div style="clear: both;"></div>
                                 <p class="float-left mb-0">Refund</p>
-                                <p class="float-right mb-0">@Html.DisplayFor(model => model.refund)đ</p>
+                                <p class="float-right mb-0">@Html.DisplayFor(model => model.refund)</p>
                                 <div style="clear: both;"></div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                         //console.log(data);
                         $.each(data, function (index, value) {
                             var Data = `<p class="float-left mb-0" style="width: 50%">` + value.name + `</p><p class="float-left mb-0" style="width: 25%">` + value.quanlity +`</p><p class="float-left mb-0 bg-danger" style="width: 25%">
-                                    <p class="float-right mb-0">`+ value.price +`đ</p></p>
+                                    <p class="float-right mb-0">`+ value.price +`</p></p>
                                     <div style="clear: both;"></div>`;
                             SetGetAjax.append(Data);
                         }

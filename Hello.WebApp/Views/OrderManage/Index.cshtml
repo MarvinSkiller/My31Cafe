@@ -62,17 +62,17 @@
                 
             </div>
             <p class="float-left mb-0 mt-3">Discount</p>
-            <p class="float-right mb-0 mt-3" id="discountBill">15000đ</p>
+            <p class="float-right mb-0 mt-3" id="discountBill">15000</p>
             <div style="clear: both;"></div>
             <p class="float-left mb-0">Fee</p>
             <p class="float-right mb-0">0</p>
             <div style="clear: both;"></div>
             <p class="float-left mb-0 font-weight-bold" style="font-size: 130%">Total</p>
-            <p class="float-right mb-0 font-weight-bold" style="font-size: 130%" id="totalBill">300000đ</p>
+            <p class="float-right mb-0 font-weight-bold" style="font-size: 130%" id="totalBill">300000</p>
             <div style="clear: both;"></div>
 
             <p class="float-left mb-0 mt-3">Pay</p>
-            <p class="float-right mb-0 mt-3" id="receiveBill">15000đ</p>
+            <p class="float-right mb-0 mt-3" id="receiveBill">15000</p>
             <div style="clear: both;"></div>
             <p class="float-left mb-0">Refund</p>
             <p class="float-right mb-0" id="refundBill">0</p>
@@ -115,10 +115,10 @@
     function getBillDetail(id, total, receive, refund, fee, discount, create_at, type, name, idorder) {
         console.log(id, total, receive, refund, fee, discount, create_at, type, name, idorder);
         $("#dateBill").text(create_at + " Code " + id);
-        $("#discountBill").text(discount+"đ");
-        $("#totalBill").text(total + "đ");
-        $("#receiveBill").text(receive + "đ");
-        $("#refundBill").text(refund + "đ");
+        $("#discountBill").text(discount+"");
+        $("#totalBill").text(total + "");
+        $("#receiveBill").text(receive + "");
+        $("#refundBill").text(refund + "");
 
         var fetchItem = $("#fetchItem");
         fetchItem.html("");
@@ -130,7 +130,7 @@
             success: function (data) {
                 $.each(data, function (index, value) {
                     var Data = `<p class="float-left mb-0" style="width: 50%">` + value.name + `</p><p class="float-left mb-0" style="width: 25%">` + value.quanlity + `</p><p class="float-left mb-0 bg-danger" style="width: 25%">
-                <p class="float-right mb-0">`+ value.priceItem + `đ</p></p>
+                <p class="float-right mb-0">`+ value.priceItem + `</p></p>
                 <div style="clear: both;">`;
                     fetchItem.append(Data);
                 })

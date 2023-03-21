@@ -14,11 +14,11 @@
                         <div class="bg-white shadow-ok pt-2 pl-3 pr-3 pb-3" style="border-radius: 10px">
                             <p class="font-weight-bold mb-1">Add product</p>
                             <div class="bg-success" style="width: 40px;height: 3px;"></div>
-                            <label class="mt-2">Tên sản phẩm</label>
+                            <label class="mt-2">Product's name</label>
                             <input class="form-control" type="text" name="name" required>
-                            <label class="mt-2">Gía tiền</label>
+                            <label class="mt-2">Price</label>
                             <input class="form-control" type="number" name="price" required>
-                            <label class="mt-2">Danh mục</label>
+                            <label class="mt-2">Category</label>
                             <select class="form-control" name="category">
                                 <option value="1">Food</option>
                                 <option value="2">Drink</option>
@@ -119,9 +119,9 @@
                 $.each(data, function (index, value) {     
                     var categoryText = '';
                     if (value.category == 1) {
-                        categoryText = "Thức ăn";
+                        categoryText = "Food";
                     } else {
-                        categoryText = "nước uống";
+                        categoryText = "Drink";
                     }
                     var Data = `<div class="infoCustomer--box p-2">
                                 <div class="float-left pr-4" style="width: 20%;height: 50px;">
@@ -131,8 +131,8 @@
                                 <p class="float-left mb-0" style="width: 15%;">`+ value.price + `</p>
                                 <p class="float-left mb-0" style="width: 25%;">`+ categoryText + `</p>
                                 <div class="float-left mb-0" style="width: 15%;display: flex;">
-                                    <div class="badge badge-success" onclick="editProduct(` + value.id + `,'` + value.name + `','` + value.price + `','` + value.category + `','` + value.image + `')">Sửa</div>
-                                    <div class="badge badge-light ml-1" onclick="deleteProduct(`+ value.id +`)">Xóa</div>
+                                    <div class="badge badge-success" onclick="editProduct(` + value.id + `,'` + value.name + `','` + value.price + `','` + value.category + `','` + value.image + `')">Edit</div>
+                                    <div class="badge badge-light ml-1" onclick="deleteProduct(`+ value.id +`)">Delete</div>
                                 </div>
                                 <div style="clear: both;"></div>
                             </div>`;
