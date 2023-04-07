@@ -106,10 +106,9 @@ namespace HocDotNet.Application.MTbl_payment
 			var query = from or in _context.tbl_orders
 						join pm in _context.tbl_payments on or.id equals pm.idorder
 						join b in _context.tbl_bills on pm.id equals b.idpayment
-						/*join us in _context.tbl_users on b.iduser equals us.id*/
+						join us in _context.tbl_users on b.iduser equals us.id
 						orderby pm.id descending
-						select new { or, pm, b};
-			/*select new { or, pm, b, us };*/
+						select new { or, pm, b, us };
 			return await query.Select(x => new Tbl_paymentResponse()
 			{
 
@@ -119,7 +118,7 @@ namespace HocDotNet.Application.MTbl_payment
 				type = x.pm.type,
 				idorder = x.pm.idorder,
 				create_at = x.b.create_at,
-				/*name = x.us.name,*/
+				name = x.us.name,
 				fee = x.or.fee,
 				total = x.or.total,
 				discount = x.or.discount

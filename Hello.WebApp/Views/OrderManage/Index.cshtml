@@ -55,9 +55,9 @@
     <div class="modal-dialog" role="document">
         <div id="print" class="mt-2 p-4 shadow-ok bg-white ml-5" style="width: 70%;height: 500px;">
             <p class="text-center" id="dateBill">10/11/2020 08:11:49 Code 1</p>
-            <p class="mb-0">PosSystem</p>
-            <p class="mb-0">Phone: +84779943889</p>
-            <p>Quản lý Gíam đốc</p>
+            <p class="mb-0">My31Cafe POS System</p>
+            <p class="mb-0">Phone: 09 774 258 179</p>
+            <p>Account: My31Cafe</p>
             <div id="fetchItem">
                 
             </div>
@@ -103,7 +103,7 @@
                                 <p class="float-left mb-0" style="width: 10%">`+ value.create_at +`</p>
                                 <p class="float-left mb-0" style="width: 10%">`+ value.type +`</p>
                                 <p class="float-left mb-0" style="width: 10%">`+ value.name +`</p>
-                                <p class="float-left mb-0" style="width: 10%" data-toggle="modal" data-target="#exampleModal" onclick="getBillDetail(` + value.id + `,'` + value.total + `','` + value.receive + `','` + value.refund + `','` + value.fee + `','` + value.discount + `','` + value.create_at + `','` + value.type + `','` + value.name + `',` + value.idorder+`)">Hóa đơn</p>
+                                <p class="float-left mb-0" style="width: 10%" data-toggle="modal" data-target="#exampleModal" onclick="getBillDetail(` + value.id + `,'` + value.total + `','` + value.receive + `','` + value.refund + `','` + value.fee + `','` + value.discount + `','` + value.create_at + `','` + value.type + `','` + value.name + `',` + value.idorder+`)">Bill</p>
                                 <div style="clear: both;"></div>
                             </div>`;
                     fetchOrder.append(Data);

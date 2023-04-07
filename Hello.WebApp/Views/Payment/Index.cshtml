@@ -1,6 +1,6 @@
 ﻿@model Hello.Application.MTbl_payment.Tbl_paymentResponse
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Invoice";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
     <div class="container-fluid p-0" style="height: 100vh;min-width: 1000px">
@@ -18,36 +18,38 @@
                       
                             <div onclick="addNewOrder()" class="btn btn-success float-right">Create new order</div>
                        
-                        <p class="text-center font-weight-bold ml-5" style="font-size: 150%">Refund: @Html.DisplayFor(model => model.refund) VNĐ</p>
+                        <p class="text-center font-weight-bold ml-5" style="font-size: 150%">Refund: @Html.DisplayFor(model => model.refund) </p>
                         <div style="clear: both;"></div>
                     </div>
                     <div class="row m-0">
                         <div class="shadow-ok bg-white p-3 " style="width: 40%;height: 600px;margin: auto">
                             <div class="btn btn-success js-print-link hidePrinf" style="width: 100%"><i class="fa fa-print mr-2" aria-hidden="true"></i> Prinf bill</div>
-                            <div id="print" class="mt-2 p-4 shadow-ok" style="width: 100%;height: 500px;">
-                                <p class="text-center">@Html.DisplayFor(model => model.create_at) Code @Html.DisplayFor(model => model.idorder)</p>
-                                <p class="mb-0">PosSystem</p>
-                                <p class="mb-0">Phone: +84779943889</p>
-                                <p>Account:Giams đốc</p>
-                                <div id="GetAjax">
-                                    
-                                </div>
-                                <p class="float-left mb-0 mt-3">Discount</p>
-                                <p class="float-right mb-0 mt-3">@Html.DisplayFor(model => model.discount)</p>
-                                <div style="clear: both;"></div>
-                                <p class="float-left mb-0">Fee</p>
-                                <p class="float-right mb-0">0</p>
-                                <div style="clear: both;"></div>
-                                <p class="float-left mb-0 font-weight-bold" style="font-size: 130%">Total</p>
-                                <p class="float-right mb-0 font-weight-bold" style="font-size: 130%">@Html.DisplayFor(model => model.total)</p>
-                                <div style="clear: both;"></div>
+                            <div id="printArea">
+                                <div id="print" class="mt-2 p-4 shadow-ok" style="width: 100%;height: 500px;">
+                                    <p class="text-center">@Html.DisplayFor(model => model.create_at) Code @Html.DisplayFor(model => model.idorder)</p>
+                                    <p class="mb-0">My31Cafe POS System</p>
+                                    <p class="mb-0">Phone: 09 774 258 179</p>
+                                    <p>Account: My31Cafe</p>
+                                    <div id="GetAjax">
 
-                                <p class="float-left mb-0 mt-3">Pay</p>
-                                <p class="float-right mb-0 mt-3">@Html.DisplayFor(model => model.receive)</p>
-                                <div style="clear: both;"></div>
-                                <p class="float-left mb-0">Refund</p>
-                                <p class="float-right mb-0">@Html.DisplayFor(model => model.refund)</p>
-                                <div style="clear: both;"></div>
+                                    </div>
+                                    <p class="float-left mb-0 mt-3">Discount</p>
+                                    <p class="float-right mb-0 mt-3">@Html.DisplayFor(model => model.discount)</p>
+                                    <div style="clear: both;"></div>
+                                    <p class="float-left mb-0">Fee</p>
+                                    <p class="float-right mb-0">0</p>
+                                    <div style="clear: both;"></div>
+                                    <p class="float-left mb-0 font-weight-bold" style="font-size: 130%">Total</p>
+                                    <p class="float-right mb-0 font-weight-bold" style="font-size: 130%">@Html.DisplayFor(model => model.total)</p>
+                                    <div style="clear: both;"></div>
+
+                                    <p class="float-left mb-0 mt-3">Pay</p>
+                                    <p class="float-right mb-0 mt-3">@Html.DisplayFor(model => model.receive)</p>
+                                    <div style="clear: both;"></div>
+                                    <p class="float-left mb-0">Refund</p>
+                                    <p class="float-right mb-0">@Html.DisplayFor(model => model.refund)</p>
+                                    <div style="clear: both;"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -61,9 +63,19 @@
     <script type="text/javascript">
         $('.js-print-link').on('click', function () {
             $(".hidePrinf").hide();
+            var printContents = document.getElementById('printArea').innerHTML;
+            var originalContents = document.body.innerHTML;
+
+            document.body.innerHTML = printContents;
 
             window.print();
+
+            document.body.innerHTML = originalContents;
             $(".hidePrinf").show();
+            @*$(".hidePrinf").hide();
+
+            window.print();
+            $(".hidePrinf").show();*@
         });
 
         fetchItemBill();

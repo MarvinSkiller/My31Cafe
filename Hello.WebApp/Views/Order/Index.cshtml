@@ -67,7 +67,7 @@
                                 </div>
                             </div>
                             <div id="totalDisplay" class="shadow-ok bg-white" style="height: 170px;border-radius: 10px;">
-                                <p class="text-success font-weight-bold text-center" style="font-size: 350%;line-height: 165px">@Html.DisplayFor(model => model.total) VNĐ</p>
+                                <p class="text-success font-weight-bold text-center" style="font-size: 350%;line-height: 165px">@Html.DisplayFor(model => model.total)</p>
                             </div>
                             <div class="row m-0 pt-3" style="height: 330px;">
                                 <div class="shadow-ok" style="width: 350px;height: 100%;">
@@ -89,7 +89,7 @@
                                         </div>
                                         <div class="float-left p-1" style="width: 25%;height: 25%;">
                                             <div id="number_10" class="bg-white shadow-ok2 font-weight-bold text-center pt-2" style="height: 100%;border-radius: 5px;font-size: 200%">
-                                                +10
+                                                10K
                                             </div>
                                         </div>
                                         <div class="float-left p-1" style="width: 25%;height: 25%;">
@@ -109,7 +109,7 @@
                                         </div>
                                         <div class="float-left p-1" style="width: 25%;height: 25%;">
                                             <div id="number_20" class="bg-white shadow-ok2 font-weight-bold text-center pt-2" style="height: 100%;border-radius: 5px;font-size: 200%">
-                                                +20
+                                                20K
                                             </div>
                                         </div>
                                         <div class="float-left p-1" style="width: 25%;height: 25%;">
@@ -129,7 +129,7 @@
                                         </div>
                                         <div class="float-left p-1" style="width: 25%;height: 25%;">
                                             <div id="number_50" class="bg-white shadow-ok2 font-weight-bold text-center pt-2" style="height: 100%;border-radius: 5px;font-size: 200%">
-                                                +50
+                                                50K
                                             </div>
                                         </div>
                                         <div class="float-left p-1" style="width: 25%;height: 25%;">
@@ -155,7 +155,7 @@
                                     </div>
                                 </div>
                                 <div class="pl-3" style="width: calc(100% - 350px);">
-                                    <div onclick="fetchUser()" data-toggle="modal" data-target="#exampleModal" class="bg-white shadow-ok text-center p-2" style="width: 100%;border-radius: 8px">
+                                    <div data-toggle="modal" class="bg-white shadow-ok text-center p-2" style="width: 100%;border-radius: 8px">
                                         <p id="selectUserDisplay" class="font-weight-bold mb-0 text-success" style="font-size: 180%"><i class="fa fa-user-circle-o mr-3" aria-hidden="true"></i>Customer</p>
                                     </div>
                                 </div>
@@ -239,7 +239,7 @@
             })
         })
 
-
+        fetchUser()
         function fetchUser() {
             var fetchUser = $("#fetchUser");
             fetchUser.html("");
@@ -251,13 +251,14 @@
                 success: function (data) {
                     //console.log(data);
                     $.each(data, function (index, value) {
-                        var Data = `<div data-dismiss="modal" aria-label="Close" onclick="selectCustomer(` + value.id + `,'` + value.name + `')" class="infoCustomer--box p-2">
+                        @*var Data = `<div data-dismiss="modal" aria-label="Close" onclick="selectCustomer(` + value.id + `,'` + value.name + `')" class="infoCustomer--box p-2">
                                         <p class="float-left mb-0" style="width: 30%;">`+ value.name + `</p>
                                         <p class="float-left mb-0" style="width: 50%;">`+ value.address + `</p>
                                         <p class="float-left mb-0" style="width: 20%;">`+ value.phone + `</p>
                                         <div style="clear: both;"></div>
                                     </div>`;
-                        fetchUser.append(Data);
+                        fetchUser.append(Data);*@
+                        selectCustomer(value.id, value.name);
                     }
                     )
                 }
@@ -268,8 +269,6 @@
         function selectCustomer(id,name) {
             $("#selectUserDisplay").text(name);
             iduser = id;
-            console.log(iduser);
-            console.log(name);
         }
 
 	var choosePayment = 0;
@@ -375,21 +374,21 @@
 	});
 	$("#number_10").click(function(){
 		if(choosePayment==1){
-			number=1*number+10;
+			number=1*number+10000;
 			console.log(number);
 			addMoney();
 		}
 	});
 	$("#number_20").click(function(){
 		if(choosePayment==1){
-			number=1*number+20;
+			number=1*number+20000;
 			console.log(number);
 			addMoney();
 		}
 	});
 	$("#number_50").click(function(){
 		if(choosePayment==1){
-			number=1*number+50;
+			number=1*number+50000;
 			console.log(number);
 			addMoney();
 		}
@@ -403,20 +402,28 @@
         var refund = 0;
         var type = 0;
 
-        
+
 
         var lackMoney = 0;
 	function addMoney(){
         $("#revice").text(number);
-
-        lackMoney = @Html.DisplayFor(model => model.total)-number;
-        $("#lackMoney").text(lackMoney);
-        if (lackMoney < 0) {
-            $("#refund").text(lackMoney * (-1));
-            $("#nextStep").show();
+        if (number === "") {
+            receive = number;
+            refund = number;
+            lackMoney = number;
+            $("#lackMoney").text(number);
+            $("#refund").text(number);
+            $("#nextStep").hide();
+        } else {
+            lackMoney = @Html.DisplayFor(model => model.total)-number;
+            $("#lackMoney").text(lackMoney);
+            if (lackMoney < 0) {
+                $("#refund").text(lackMoney * (-1));
+                $("#nextStep").show();
+            }
+            receive = number;
+            refund = lackMoney * (-1);
         }
-        receive = number;
-        refund = lackMoney * (-1);
     }
 
         function addPayment() {
@@ -456,7 +463,7 @@
             });
         }
 
-        
+
     </script>
 
 
